@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: background-color 10s ease; /* Smooth background transition */
+}
+
+#gameContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    padding: 15px;
+    font-size: 20px;
+    margin: 20px 0;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #feb47b;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #feb47b;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #ff7e5f;
+    transform: scale(1.05);
+}
+
+#resultMessage {
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#currentScore {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#highScore {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#resetBtn {
+    background-color: #ff7e5f;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#resetBtn:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+}
+
+
+body {
+    transition: background 5s ease-in-out;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes sparkle {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ffcc00, 0 0 15px #ffcc00;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ffcc00, 0 0 15px #ffcc00;
+    }
+}
+
+#resetBtn {
+    display: none;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #feb47b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
